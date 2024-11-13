@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+ul li {
+    list-style: none;
+}
+
+
+.main {
+    background-color: #252e49;
+
+
+}
+
+
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+
+
+header {
+    padding-top: 45px;
+
+
+}
+
+.tema {
+    margin-left: 35px;
+    font-size: 30px;
+    color: #FCBE29;
+}
+
+.heroArea {
+    display: flex;
+    margin: 10px;
+
+
+}
+
+.heroArea .leftside {
+    background-color: #1D2437;
+    flex: 1;
+
+}
+
+
+.heroArea .leftside h1 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 49px;
+    margin: 80px 0 30px 0;
+
+}
+
+
+.heroArea .rightside {
+    display: flex;
+    flex: 1;
+    background-color: #1D2437;
+    height: 350px;
+    top: 0px;
+}
+
+
+.heroArea .rightside img {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* section info **/
+
+
+
+
+
+.text-circle {
+    width: 6px;
+    height: 6px;
+    background-color: #c2c8cb;
+    border-radius: 50px;
+    margin: 0 10px;
+
+}
+
+
+/* section bordas e circulos lado esquerdo do curriculo*/
+
+
+.inst-container {
+
+    margin: auto;
+    max-width: 900px;
+    padding: 70px;
+}
+
+
+.inst-item {
+    border-left: 3px solid #ecf0f3;
+    display: flex;
+}
+
+.inst-item:last-child {
+    border: 0;
+}
+
+.inst-circle {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #0071b7;
+    margin-left: -9px;
+
+}
+
+
+.inst-text {
+
+    flex: 1;
+    margin-left: 50px;
+
+}
+
+.inst-text h2 {
+    font-size: 32px;
+    color: #000;
+    margin: -10px 0 20px 0;
+
+}
+
+.inst-text p {
+
+    font-size: 17px;
+    line-height: 23px;
+    color: #777;
+    margin-bottom: 70px;
+}
+
+.inst-item:last-child p {
+    margin: 0;
+}
+
+
+
+
+/*section footer Container*/
+
+
+.cta {
+    background-color: #1d2437;
+    border-bottom: 22px solid #333;
+
+}
+
+.cta-left .icone {
+    width: 100px;
+    margin-left: -20px;
+}
+
+
+
+
+
+.cta-container {
+    margin: auto;
+    max-width: 640px;
+    display: flex;
+    padding: 100px 0;
+    color: white;
+
+}
+
+.cta-left {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.cta-left h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+
+.form-de-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0;
+    max-width: 880px;
+    position: relative;
+    left: 60px;
+}
+
+.form-de-contato p {
+    color: white;
+}
+
+
+footer {
+    background-color: #1d2437;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 1070px;
+}
+
+.footer-left {}
+
+.footer-right {
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+
+.footer-right a {
+    color: #777;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+/*** Responcividade****/
+
+@media (max-width: 1030px) {
+
+    .main .container {
+        padding: 0 20px;
+    }
+
+    footer .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:900px) {
+    .heroArea {
+        flex-direction: column-reverse;
+
+    }
+
+    .heroArea .rightside {
+        height: 400px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+
+
+
+
+    .cta .cta-container {
+        flex-direction: column;
+        margin: 0 30px;
+
+    }
+
+    .cta .cta-left,
+    .cta .cta-right {
+        margin: 0;
+    }
+
+    .cta .cta-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+
+}
+
+.form {
+    background: #050447;
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+    border-radius: 3px;
+    max-width: 1070px;
+    margin-top: 50px;
+    padding: 3em;
+    margin-bottom: 50px;
+}
+
+.titulo-form {
+    width: 100%;
+    float: left;
+    color: #DDE0E7;
+    margin-bottom: 20px;
+    border-bottom: 1px #eee solid;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.input {
+    border: 3px solid #DDE0E7;
+
+    background: none;
+    padding: 0.8em;
+    font-size: 1em;
+    color: #696969;
+    width: 100%;
+}
+
+.textarea {
+    border: 3px solid #DDE0E7;
+    background: none;
+    resize: none;
+    padding: 0.8em;
+    font-size: 1em;
+    color: #DDE0E7;
+    width: 100%;
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    color: #DDE0E7;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 350ms;
+}
+
+.input:focus,
+input:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+}
+
+.textarea:focus,
+textarea:valid {
+    outline: none;
+    --angle: 0deg;
+    border-bottom: 3px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 3s rotate9234 linear infinite;
+}
+
+@keyframes rotate9234 {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.input:focus~label,
+input:valid~label {
+    transform: translateY(-50%) scale(1);
+    background-color: #fff;
+    padding: 0 .4em;
+    color: #8000ff;
+}
+
+.textarea:focus~label,
+textarea:valid~label {
+    transform: translateY(-50%) scale(1);
+    background-color: #fff;
+    padding: 0 .4em;
+    color: #8000ff;
+}
+
+.btn-gradient {
+    width: auto;
+    font-size: 1em;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.btn-gradient::before {
+
+    position: absolute;
+    content: "";
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    left: -3px;
+    top: -3px;
+    background: linear-gradient(124deg, #e72100, #f36161, #eec647, #dfe404, #35e854, #32dfe9, #4a3df1, #e549f5, #ae07bf);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0px);
+    animation: move 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn-gradient:hover::before {
+    opacity: 1;
+}
+
+.btn-gradient::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #522220;
+    left: 0;
+    top: 0;
+}
+
+
+
+/* Inicio do Botão whats Pulsa*/
+
+
+.btn {
+
+    padding: 0.7em 1.3em;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1708e7 0%, #150666 100%);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 6px;
+    transition: 0.3s;
+
+}
+
+.btn:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+@-webkit-keyframes btn-pulsando {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes btn-pulsando {
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        color: #ffffff;
+    }
+}
+
+.btn-pulsando {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-pulsando:hover,
+.btn-pulsando:focus,
+.btn-pulsando:active {
+    -webkit-animation-name: btn-pulsando;
+    animation-name: btn-pulsando;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/*fim do formulário*/
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
